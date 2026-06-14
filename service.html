@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/common-style.css" />
+    <link rel="stylesheet" href="css/service-style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-follower" id="cursor"></div>
+
+    <!-- Marquee Section -->
+    <div class="marquee">
+      <div class="marquee-content">
+        ⚡ 5% DISCOUNT ON EVERY SPARE PART ⚡ 10% OFF ON LABOR ⚡ WARRANTY ON
+        SERVICE ⚡ FREE PICK-UP & DROP
+      </div>
+    </div>
+    <div id="navbar-placeholder"></div>
+    <script>
+      function loadComponent(id, file) {
+        fetch(file)
+          .then((res) => res.text())
+          .then((data) => (document.getElementById(id).innerHTML = data))
+          .catch((err) => console.error(`Error loading ${file}:`, err));
+      }
+
+      loadComponent("navbar-placeholder", "navbar.html");
+      loadComponent("cta-placeholder", "cta.html");
+      loadComponent("footer-placeholder", "footer.html");
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>
+      <h1>Service</h1>
+      <div class="breadcrumb">Home → Service</div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+      <div class="text">
+        <h2>
+          Dedicated for <br />
+          Rider from Rider.
+        </h2>
+      </div>
+      <div class="feature">
+        <h3>Performance that Lasts</h3>
+        <p>
+          With genuine parts and expert tuning, we make sure your ride stays
+          powerful and reliable.
+        </p>
+      </div>
+      <div class="feature">
+        <h3>Passion-Driven Team</h3>
+        <p>
+          Every service we provide comes with dedication, honesty, and love for
+          the Bullet.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+      <div class="section-title">
+        <h4>Service Offering</h4>
+        <h2>Professional Service</h2>
+      </div>
+
+      <div class="services">
+        <div class="service-box">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Complete Bullet Servicing</h3>
+          <p>
+            Regular maintenance for smooth performance. We ensure every ride
+            feels as smooth as the first day.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-circle-notch"></i>
+          <h3>Engine Repair & Tuning</h3>
+          <p>
+            Precision work for maximum power and efficiency. Get the perfect
+            balance of performance and durability.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-gears"></i>
+          <h3>Oil Change & Lubrication</h3>
+          <p>
+            Keeps your bike running at its best. Only high-quality oils and
+            lubricants for your Bullet
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-gauge"></i>
+          <!-- <i class="fa-solid fa-car-burst"></i> -->
+          <h3>Brake & Clutch Overhaul</h3>
+          <p>
+            Safety and control, always on point. Ride confidently with
+            responsive braking and smooth clutch action.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-microchip"></i>
+          <h3>Wheel Balancing & Alignment</h3>
+          <p>
+            Ride smoother and safer. Better balance means better control on
+            every road.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-wrench"></i>
+          <h3>Customization & Modifications</h3>
+          <p>
+            Unique styling and performance upgrades. Turn your imagination into
+            reality with custom designs.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-person-biking"></i>
+          <h3>Genuine Spare Parts & Accessories</h3>
+          <p>
+            authentic, durable, and reliable. We guarantee original quality for
+            long-lasting performance.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-regular fa-circle-up"></i>
+
+          <h3>Performance Upgrades</h3>
+          <p>
+            Exhausts, silencers, and advanced kits for extra thrill. Make your
+            Bullet roar with more power and bold sound.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-gears"></i>
+          <h3>Detailing & Polishing</h3>
+          <p>
+            Give your Bullet the shine it deserves. Keep your bike looking brand
+            new with professional care
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-shop"></i>
+          <h3>Premium Workshop Diagnostics</h3>
+          <p>
+            Advanced tools for accurate fault detection and repairs. Quick and
+            precise results mean faster fixes.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-award"></i>
+          <h3>Warranty-Backed Servicing</h3>
+          <p>
+            Peace of mind with guaranteed quality. Every service is backed with
+            trust and assurance.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-toolbox"></i>
+          <h3>Electrical System Check & Repair</h3>
+          <p>
+            Ensure lights, wiring, and electronics work flawlessly. Stay safe
+            with fully functional electrical systems.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+      <div class="wrap why-choose-grid">
+        <div class="why-left">
+          <h5>Service Advantages</h5>
+          <h2>Why Our Riders Trust Us for Quality and Reliability</h2>
+          <p>
+            At Riders Empire, we go beyond basic servicing. Here's why riders
+            across Bihar choose us for their Royal Enfield:
+          </p>
+          <!-- <a href="#" class="hero-btn">Discover More</a> -->
+        </div>
+        <div class="why-right">
+          <div class="feature-box why-choose-bg">
+            <h3>Skilled Mechanics</h3>
+            <p>
+              Our team knows Royal Enfield inside out. Every service is handled
+              with precision and care, ensuring your bike runs smoothly and
+              safely.
+            </p>
+          </div>
+          <div class="feature-box box-margin">
+            <h3>Trust & Reliability Across Bihar</h3>
+            <p>
+              Serving riders from Patna and beyond, we’ve built a reputation for
+              quality, transparency, and timely service.
+            </p>
+          </div>
+          <div class="feature-box">
+            <h3>Rider-Focused Approach</h3>
+            <p>
+              We aren’t just mechanics; we’re passionate riders. Every
+              recommendation is tailored to your needs, ensuring a better, safer
+              riding experience.
+            </p>
+          </div>
+          <div class="feature-box box-margin-bottom why-choose-bg">
+            <h3>Seasonal Offers & Deals</h3>
+            <p>
+              We offer regular discounts that make maintaining your Royal
+              Enfield easier and more budget-friendly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Services Section -->
+    <section class="other-service">
+      <div class="other-left">
+        <h5>Other Service</h5>
+        <h2>Alongside our premium offerings</h2>
+        <p>
+          Riders Empire also provides supportive services to make your Bullet
+          care complete: from regular check-ups to roadside assistance, ensuring
+          every ride stays smooth, safe, and worry-free.
+        </p>
+        <div class="small-box small-box-margin">
+          <h3>Suspension Check & Repair</h3>
+          <p>
+            Our experts inspect, repair, or replace parts to keep your Bullet
+            stable and comfortable on every road.
+          </p>
+          <!-- <a href="#" class="btn-outline">Learn More</a> -->
+        </div>
+      </div>
+      <div class="other-right">
+        <div class="big-box">
+          <span class="tag">Popular</span>
+          <h3>First Free Inspection</h3>
+          <p>
+            Complimentary check-up for your Bullet. Our experts thoroughly
+            inspect your bike to spot issues early, ensuring a safer and
+            smoother ride from the very first visit.
+          </p>
+
+          <!-- <a href="#" class="btn-outline">Learn More</a> -->
+        </div>
+        <div class="small-boxes">
+          <div class="small-box box-bg">
+            <h3>Pick-up & Drop Facility</h3>
+            <p>Hassle-free service at your doorstep.</p>
+            <!-- <a href="#" class="btn-outline">Learn More</a> -->
+          </div>
+          <div class="small-box box-bg1">
+            <h3>Tyre Replacement & Tube Fixing</h3>
+            <p>Reliable solutions for punctures and wear.</p>
+            <!-- <a href="#" class="btn-outline">Learn More</a> -->
+          </div>
+          <div class="small-box box-bg2">
+            <h3>Battery Check & Replacement</h3>
+            <p>Stay powered up for every journey.</p>
+            <!-- <a href="#" class="btn-outline">Learn More</a> -->
+          </div>
+
+          <div class="small-box box-bg3">
+            <h3>Chain & Sprocket Care</h3>
+            <p>Smooth power delivery with proper maintenance.</p>
+            <!-- <a href="#" class="btn-outline">Learn More</a> -->
+          </div>
+
+          <div class="small-box box-bg4">
+            <h3>Fuel System Cleaning</h3>
+            <p>Improved mileage and performance.</p>
+            <!-- <a href="#" class="btn-outline">Learn More</a> -->
+          </div>
+
+          <div class="small-box box-bg5">
+            <h3>Custom Paint & Decals</h3>
+            <p>Give your Bullet a bold, unique look.</p>
+            <!-- <a href="#" class="btn-outline">Learn More</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial-section">
+      <div class="testimonial-header">
+        <h2>What <span>Our Client</span> Says</h2>
+        <p>Real feedback, Real Experience</p>
+      </div>
+
+      <div class="testimonial-wrapper">
+        <!-- Video on Left -->
+        <video class="testimonial-video" controls poster=" ">
+          <source src="images/client-testimonial.mp4" type="video/mp4" />
+          Your browser does not support video.
+        </video>
+
+        <!-- Content on Right -->
+        <div class="testimonial-content">
+          <h3>Sarah Johnson</h3>
+          <div class="stars">★★★★★</div>
+          <span>Marketing Manager</span>
+          <p>
+            "This service completely transformed our business. The team was
+            supportive, professional, and exceeded all expectations. Highly
+            recommend them!"
+          </p>
+        </div>
+      </div>
+    </section>
+    <div id="cta-placeholder"></div>
+    <div id="footer-placeholder"></div>
+
+    <script>
+      // Particle System
+      function createParticles() {
+        const particlesContainer = document.getElementById("particles");
+        const particleCount = 50;
+
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement("div");
+          particle.className = "particle";
+          particle.style.left = Math.random() * 100 + "%";
+          particle.style.top = Math.random() * 100 + "%";
+          particle.style.animationDelay = Math.random() * 6 + "s";
+          particle.style.animationDuration = Math.random() * 3 + 3 + "s";
+          particlesContainer.appendChild(particle);
+        }
+      }
+
+      // Cursor Follower
+      const cursor = document.getElementById("cursor");
+      let mouseX = 0,
+        mouseY = 0;
+      let cursorX = 0,
+        cursorY = 0;
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function animateCursor() {
+        cursorX += (mouseX - cursorX) * 0.1;
+        cursorY += (mouseY - cursorY) * 0.1;
+        cursor.style.left = cursorX + "px";
+        cursor.style.top = cursorY + "px";
+        requestAnimationFrame(animateCursor);
+      }
+
+      // Navbar Scroll Effect
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Interactive Button Effects
+      document.querySelectorAll(".hero-btn, .call-btn").forEach((btn) => {
+        btn.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-5px) scale(1.05)";
+        });
+        btn.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0) scale(1)";
+        });
+      });
+
+      /* ===============================
+     ✅ New Auto Slider Functionality
+  =============================== */
+      let currentSlideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const contents = document.querySelectorAll(".slide-content");
+      const indicators = document.querySelectorAll(".indicator");
+
+      function showSlide(n) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === n);
+          contents[i].classList.toggle("active", i === n);
+          indicators[i].classList.toggle("active", i === n);
+        });
+        currentSlideIndex = n;
+      }
+
+      function currentSlide(n) {
+        showSlide(n - 1);
+      }
+
+      function autoSlide() {
+        let next = (currentSlideIndex + 1) % slides.length;
+        showSlide(next);
+      }
+
+      setInterval(autoSlide, 6000); // 6 seconds
+
+      // Parallax Effect
+      window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        const heroGrid = document.querySelector(".hero-grid");
+        const speed = scrolled * 0.3;
+        if (heroGrid) {
+          heroGrid.style.transform = `translateY(${speed}px)`;
+        }
+      });
+
+      // Loader functionality
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        setTimeout(() => {
+          loader.classList.add("hidden");
+          setTimeout(() => {
+            loader.style.display = "none";
+          }, 500);
+        }, 2000); // Show loader for 2 seconds
+      });
+
+      // Initialize
+      createParticles();
+      animateCursor();
+      showSlide(currentSlideIndex);
+
+      // Pause slideshow on hover
+      const heroSection = document.querySelector(".hero");
+      heroSection.addEventListener("mouseenter", () =>
+        clearInterval(autoSlide)
+      );
+      heroSection.addEventListener("mouseleave", () =>
+        setInterval(autoSlide, 6000)
+      );
+
+      // Add click ripple effect
+      document.addEventListener("click", (e) => {
+        const ripple = document.createElement("div");
+        ripple.style.position = "fixed";
+        ripple.style.left = e.clientX + "px";
+        ripple.style.top = e.clientY + "px";
+        ripple.style.width = "10px";
+        ripple.style.height = "10px";
+        ripple.style.background = "rgba(212, 175, 55, 0.6)";
+        ripple.style.borderRadius = "50%";
+        ripple.style.transform = "translate(-50%, -50%)";
+        ripple.style.pointerEvents = "none";
+        ripple.style.zIndex = "10000";
+        ripple.style.animation = "rippleEffect 0.6s ease-out";
+
+        document.body.appendChild(ripple);
+
+        setTimeout(() => {
+          ripple.remove();
+        }, 600);
+      });
+
+      // Add ripple animation
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes rippleEffect {
+            to {
+                transform: translate(-50%, -50%) scale(20);
+                opacity: 0;
+            }
+        }
+    `;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>
